@@ -44,7 +44,7 @@ function App() {
   };
 
   const judgement = (user, computer) => {
-    console.log('user', user, 'computer', computer);
+    // console.log('user', user, 'computer', computer);
 
     // user == computer -> tie
     // user == rock, computer == scissors -----> user win
@@ -83,11 +83,14 @@ function App() {
         <Box title='You' item={userSelect} result={result}/>
         <Box title='computer' item={computerSelect} result={result}/>
       </div>
+      <div>
+        <p>가위 바위 보 중 하나를 선택해주세요</p>
+      </div>
       {/* 2. 박스 하단에 가위바위보 버튼 */}
-      <div className='main'>
-        <button onClick={() => play("scissors")}>가위</button>
-        <button onClick={() => play("rock")}>바위</button>
-        <button onClick={() => play("paper")}>보</button>
+      <div className='main game-button'>
+        <button onClick={() => play("scissors")}>✌🏻</button>
+        <button onClick={() => play("rock")}>✊🏻</button>
+        <button onClick={() => play("paper")}>✋🏻</button>
       </div>
     </div>
   );
