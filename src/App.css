@@ -7,7 +7,7 @@
 
 .item-img {
     width: 400px;
-    height: auto;
+    height: 400px;
 }
 
 .main {
@@ -15,3 +15,16 @@
     justify-content: center;
     align-items: center;
 }
+
+.Win {
+    border: 10px solid greenyellow;
+}
+
+.Lose {
+    border: 10px solid red;
+}
+
+.Tie {
+    border: 10px solid black;
+}
+
